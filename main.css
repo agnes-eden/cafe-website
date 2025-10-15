@@ -1,0 +1,373 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            /*font-family: 'Arial', serif;*/
+            height: 100%;
+            color: #fff;
+            font-size: 16px;
+			font-family: 'Dancing Script', cursive;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh; 
+        }
+
+        .sidebar {
+            min-width: 250px; 
+            max-width: 290px; 
+            background-color:  #FFFCE8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 0em; 
+        }
+
+        .logo img {
+            max-width: 40%;
+            margin-bottom: 0.5em;
+        }
+
+        .logo h2 {
+            font-size: 1.5rem; 
+			font-family: 'Dancing Script', cursive;
+			color: #cb4662;
+        }
+
+        .logo p {
+            font-size: 0.8rem;
+            color: #FF7B7B;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 0.4em 1;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #796356;
+            font-weight: bold;
+            display: block;
+            padding: 0.5em 0;
+            font-size: 1rem;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #E66A6A; 
+        }
+
+        .address {
+            font-size: 0.75rem;
+            color: black;
+            text-align: center;
+        }
+
+        .main-content {
+            flex: 1;
+            background: url('image/cafeplace4.png') center center/cover no-repeat;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .overlay {
+            background-color: rgba(255, 160, 135, 0.8);
+            padding: 2em;
+            max-width: 75%;
+            border-radius: 20px;
+            margin: 2em auto;
+            text-align: center;
+		    border: 5px dashed #EDC39A;
+        }
+        .overlay h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0em;
+            text-align: center;
+			color: #796356;
+			text-shadow: 
+            3px 3px 0px #FFFFEF,
+           -3px -3px 0px #FFFFEF,
+            3px -3px 0px #FFFFEF,
+           -3px 3px 0px #FFFFEF;
+	        margin: 0;
+            padding: 0;
+           font-weight: bold;
+           text-align: center;
+        }
+
+        .overlay p {
+            font-size: 1rem;
+            margin-bottom: 1.2em;
+            line-height: 1.6;
+			color: #FFFFEF;
+        }
+
+        .hours {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hours span {
+            font-size: 1.2rem;
+            font-weight: bold;
+			color: #FFFFEF;
+        }
+
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+        }
+
+        .modal-content {
+            background-color: #FEFFEF;
+            margin: 10vh auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            border-radius: 8px;
+            display: flex;
+            max-width: 600px;
+        }
+
+        .modal-left {
+            flex: 1;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .modal-left h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .modal-left p {
+            color: #555;
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+        }
+
+        .modal-right {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .modal-right h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .modal-right label {
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .modal-right input[type=text],
+        .modal-right input[type=email],
+        .modal-right input[type=tel],
+        .modal-right textarea {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .modal-right textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .modal-right button[type=submit] {
+            background-color: #FF7B7B;
+            color: #fff;
+            padding: 0.6rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-right button[type=submit]:hover {
+            background-color: #E66A6A;
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 0.9rem;
+            border-radius: 4px;
+            margin-top: 0.6rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                min-height: auto; 
+                height: auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                min-width: auto;
+                max-width: none;
+                padding: 15px;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            nav ul {
+                display: flex;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 0 0.6em;
+            }
+
+            .buy-btn {
+                margin: 0.9em auto;
+                width: auto;
+            }
+
+            .address {
+                margin-top: 0.9em;
+            }
+
+            .main-content {
+                padding: 1.2em;
+            }
+
+            .overlay {
+                margin: 1.2em auto;
+                margin-left: auto;
+            }
+
+            .hours {
+                justify-content: center;
+                color: #FFF0D1;
+            }
+
+            .modal-content {
+                flex-direction: column;
+                margin: 15vh auto; 
+            }
+
+            .modal-left, .modal-right {
+                flex: 1;
+                padding: 15px;
+                border-right: none;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .modal-left:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5em 0;
+            }
+
+            .logo img {
+                max-width: 60%;
+            }
+            .overlay h1 {
+                font-size: 2em;
+            }
+
+            .overlay p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body, html {
+                font-size: 18px;
+            }
+
+            .overlay h1 {
+                font-size: 3em;
+            }
+
+            .overlay p {
+                font-size: 1.2em;
+            }
+        }
+		
+          .footer {
+          background-color: #796356;
+          padding: 1rem;
+          text-align: center;
+          font-size: 1.1rem;
+          border-top: 6px solid #e6b7b1;
+          margin-top: auto;
+          }
+
+         .footer p {
+          margin: 0.5px;
+          color: white;
+          }

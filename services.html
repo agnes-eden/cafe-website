@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styleforproductspage.css" />
+    <title>Our Services</title>
+</head>
+<body>
+    <div class="top-navbar">
+	    <div class="back-button-container">
+      <a href="mainpage.html" class="back-button">&#8678;</a>
+    </div>
+	</div>
+	  <div class="container">
+    <h1>Our Services</h1>
+	<p></p>
+  <br>
+<hr>
+    <div class="service-container">
+        <div class="service-card">
+            <img src="image/sip & paint.jfif" alt="Service 1 Image" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">Sip and Paint Sessions</h3>
+                <div class="see-more-container">
+                    <button class="see-more-btn" data-target="description-1">See more</button>
+                </div>
+                <div id="description-1" class="description">
+                    Unleash your inner artist in a relaxed, inspiring atmosphere! 
+					Our Sip & Paint sessions are perfect for beginners and hobbyists 
+					alike. Each session is guided by a local artist and includes 
+					all the materials you need—canvas, paints, brushes, and an apron. 
+					Plus, enjoy a complimentary drink of your choice (coffee, tea, or 
+					juice) while you create your masterpiece.
+                    <br><br>
+                    <b>Pricing:</b><br>
+                    Regular Session: ₱799 per person (2 hours)
+                    <br>
+                    Themed Event Nights: ₱899 per person (includes a pastry + drink)
+                    <br><br>
+                   <b>Schedule:</b><br>
+                   Every Friday & Saturday, 6PM – 8PM<br>
+                   Private bookings available for groups of 6+
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="image/lounge.jfif" alt="Service 2 Image" class="service-image">
+            <div class="service-info">
+                <h3 class="service-title">Creative Co-working Lounge</h3>
+                <div class="see-more-container">
+                    <button class="see-more-btn" data-target="description-2">See more</button>
+                </div>
+                <div id="description-2" class="description">
+                  Need a cozy space to work, study, or create? Our Creative Co-Working 
+				  Lounge is designed for thinkers and makers. Enjoy a peaceful ambiance
+				  with artistic vibes, free Wi-Fi, charging stations, and complimentary 
+				  use of sketchpads and art materials for light doodling or journaling. 
+				  Comes with your choice of a brewed coffee or iced tea.
+                  <br><br>
+                  <b>Pricing:</b><br>
+                  Hourly Pass: ₱150/hour (includes 1 drink)<br>
+                  Day Pass: ₱499 (unlimited hours, 2 drinks + pastry included)<br><br>
+                  <b>Perks:</b><br>
+                  10% off food & drinks while using the lounge<br>
+                  Optional add-ons: Premium sketch pad (+₱99), Acrylic kit rental (+₱149)
+                </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer">
+    <p>&copy; 2025 Atelier de Café. All rights reserved.</p>
+    <p>Designed with love. Visit us!</p>
+  </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+
+            seeMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const description = document.getElementById(targetId);
+
+                    if (description.classList.contains('show')) {
+                        description.classList.remove('show');
+                        this.textContent = 'See more';
+                    } else {
+                        description.classList.add('show');
+                        this.textContent = 'See less';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

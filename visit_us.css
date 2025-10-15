@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fdecea;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center all child items including the button */
+  justify-content: center;
+  width: 100%;
+}
+
+.back-button {
+  background-color: #e6b7b1;
+  color: #4a1c1c;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* space between button and container */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.back-button:hover {
+  background-color: #796356;
+  color: white;
+  transform: scale(1.05);
+}
+
+.contact-container {
+  max-width: 900px; 
+  width: 100%;
+  background-color: #ebaaa0;
+  padding: 70px 80px; 
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+  border: 3px dashed #6b2926;
+  text-align: center;
+}
+
+.contact-card {
+  background-color: #d28c8c;
+  padding: 30px 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  color: #e75480;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.contact-card {
+  background-color: #d28c8c; /* changed from #e9a9a9 */
+  padding: 30px 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-item span {
+  font-size: 18px;
+}
+
+
+.icon-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper i {
+  font-size: 28px;
+  color: #e75480;
+}
+
+.contact-item span,
+.contact-item a {
+  font-size: 25px;
+  color: #4a1c1c;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.location-image {
+  margin-top: 35px; /* space between contact container and image */
+  width: 100%;
+  text-align: center;
+}
+
+.location-image img {
+  max-width: 900px; 
+  width: 100%;
+ padding: 70px 80px; 
+  border-radius: 15px;
+  border: 3px dashed #6b2926;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+

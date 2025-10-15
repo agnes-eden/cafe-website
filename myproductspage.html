@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styleforproductspage.css"/>
+  <title>Products Page</title>
+</head>
+<body>
+ 
+    <div class="top-navbar">
+	    <div class="back-button-container">
+      <a href="mainpage.html" class="back-button">&#8678;</a>
+    </div>
+	</div>
+
+  <div class="container">
+    <h1>Our Products</h1>
+	<p></p>
+  <br>
+<hr>
+  <br>
+    <div class="button-group">
+      <button onclick="showCategory('coffee')">Coffee</button>
+	  <button onclick="showCategory('pastry')">Pastries</button>
+      <button onclick="showCategory('art')">Art</button>
+      <button onclick="showCategory('journal')">Journal</button>
+    </div>
+
+    <!-- Coffee Section -->
+    <div class="products-wrapper" id="coffee">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/cold brew coffee.jpg" class="product-img" alt="Iced brew coffee" />
+          <div class="product-info">
+            <div class="product-name">Cold Brew Coffee</div>
+            <div class="product-price">₱69</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/espresso shot.jfif" class="product-img" alt="Espresso" />
+          <div class="product-info">
+            <div class="product-name">Espresso Shot</div>
+            <div class="product-price">₱78</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="coffee">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/iced caramel machiatto.jfif" class="product-img" alt="Iced Caramel Machiatto" />
+          <div class="product-info">
+            <div class="product-name">Iced Caramel Machiatto</div>
+            <div class="product-price">₱69</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/latte.jfif" class="product-img" alt="Latte" />
+          <div class="product-info">
+            <div class="product-name">Latte</div>
+            <div class="product-price">₱80</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="coffee">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/dirty matcha.jpg" class="product-img" alt="Matcha Coffee" />
+          <div class="product-info">
+            <div class="product-name">Dirty Matcha</div>
+            <div class="product-price">₱70</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/affogato.jfif" class="product-img" alt="Affogato" />
+          <div class="product-info">
+            <div class="product-name">Affogato</div>
+            <div class="product-price">₱85</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="coffee">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/toffe nut.jpg" class="product-img" alt="Toffe Nut Iced Machiatto" />
+          <div class="product-info">
+            <div class="product-name">Toffe Nut Iced Machiatto</div>
+            <div class="product-price">₱89</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/oat milk mocha.jpg" class="product-img" alt="Oat Milk Mocha" />
+          <div class="product-info">
+            <div class="product-name">Oat Milk Mocha</div>
+            <div class="product-price">₱65</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pastries Section -->
+    <div class="products-wrapper" id="pastry">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/croissant.jpg" class="product-img" alt="Croissant" />
+          <div class="product-info">
+            <div class="product-name">Classic Butter Croissant</div>
+            <div class="product-price">₱59</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/almond danish.jpg" class="product-img" alt="Almond Danish" />
+          <div class="product-info">
+            <div class="product-name">Almond Danish</div>
+            <div class="product-price">₱65</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="pastry">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/chocolat.jpg" class="product-img" alt="Pain au Chocolat" />
+          <div class="product-info">
+            <div class="product-name">Pain au Chocolat</div>
+            <div class="product-price">₱60</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/cream puff.jpg" class="product-img" alt="Cream Puff" />
+          <div class="product-info">
+            <div class="product-name">Custard Cream Puff</div>
+            <div class="product-price">₱59</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="pastry">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/apple turnover.jfif" class="product-img" alt="Mini Apple Pie" />
+          <div class="product-info">
+            <div class="product-name">Mini Apple Turnover</div>
+            <div class="product-price">₱75</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/matcha mochi.jfif" class="product-img" alt="Matcha Mochi" />
+          <div class="product-info">
+            <div class="product-name">Matcha Mochi</div>
+            <div class="product-price">₱65</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="pastry">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/ube.jfif" class="product-img" alt="Ube Cheese Ensaymada" />
+          <div class="product-info">
+            <div class="product-name">Ube Cheese Ensaymada</div>
+            <div class="product-price">₱69</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/strawberry danish.jpg" class="product-img" alt="Strawberry Cream Cheese Danish" />
+          <div class="product-info">
+            <div class="product-name">Strawberry Cream Cheese Danish</div>
+            <div class="product-price">₱89</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Art Section -->
+    <div class="products-wrapper" id="art">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/watercolor set.jfif" class="product-img" alt="Watercolor Set" />
+          <div class="product-info">
+            <div class="product-name">Watercolor Set</div>
+            <div class="product-price">₱150</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/sketch pad.jfif" class="product-img" alt="Sketch Pad" />
+          <div class="product-info">
+            <div class="product-name">Sketch Pad</div>
+            <div class="product-price">₱50</div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <div class="products-wrapper" id="art">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/brush set.jfif" class="product-img" alt="Brush Set" />
+          <div class="product-info">
+            <div class="product-name">Brush Set</div>
+            <div class="product-price">₱145</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/acrylic tubes.jfif" class="product-img" alt="Acrylic Tubes" />
+          <div class="product-info">
+            <div class="product-name">Acrylic Tubes</div>
+            <div class="product-price">₱165</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="art">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/fineliner.jpg" class="product-img" alt="Fineliner Pens" />
+          <div class="product-info">
+            <div class="product-name">Fineliner Pens</div>
+            <div class="product-price">₱112</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/oil pastels.jfif" class="product-img" alt="Oil Pastels" />
+          <div class="product-info">
+            <div class="product-name">Oil Pastels</div>
+            <div class="product-price">₱120</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Journal Section -->
+    <div class="products-wrapper" id="journal">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/grind.jfif" class="product-img" alt="Grind Journal" />
+          <div class="product-info">
+            <div class="product-name">Daily Grind Journal</div>
+            <div class="product-price">₱50</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/mood tracker.jfif" class="product-img" alt="Mood Tracker" />
+          <div class="product-info">
+            <div class="product-name">Mood & Brew Tracker</div>
+            <div class="product-price">₱20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-wrapper" id="journal">
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="image/thoughts.jfif" class="product-img" alt="Thoughts Notebook" />
+          <div class="product-info">
+            <div class="product-name">Coffee Thoughts Notebook</div>
+            <div class="product-price">₱55</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="image/coversational.jfif" class="product-img" alt="Conversational Notebook" />
+          <div class="product-info">
+            <div class="product-name">Cafe Conversational Notebook</div>
+            <div class="product-price">₱50</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Atelier de Café. All rights reserved.</p>
+    <p>Designed with love. Visit us!</p>
+  </footer>
+
+<script src="productspage.js"></script>
+</body>
+</html>
